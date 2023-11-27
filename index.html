@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Language" content="ru" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Библейский курс</title>
+    <link rel="stylesheet" href="./files/apps/glightbox.min.css?_v=20231127175553" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20231127175553" />
+  </head>
+  <script src="./files/js/code.js?_v=20231127175553"></script>
+  <body>
+    <noscript>
+      <div class="bg-wrong">
+        <div class="stop wrong">Упс, похоже вы запретили использовать JavaScript :(</div>
+      </div>
+    </noscript>
+
+    <script>
+      document.body.innerHTML = `
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <button class="button btn-navigation" disabled>Назад<span>&#9668;</span></button>
+
+            <div class="header__btns">
+              <a id="modal-font" class="button btn-header">Аа</a>
+            </div>
+
+            <a href="./question.html" class="button btn-navigation btn-active">Далее<span>&#9658;</span></a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <article class="home">
+          <div class="container bg-white">
+            <a href="https://assetsnffrgf-a.akamaihd.net/assets/m/1102021805/univ/art/1102021805_univ_lsr_lg.jpg" class="glightbox2" data-glightbox="title:Описание изображения; description: Мужчина начинает свой путь по извилистой дороге, вдоль которой растут красивые цветы трава и деревья. Вдалеке виднеются холмы и горы.">
+              <picture class="home__img image-full">
+                <img src="https://assetsnffrgf-a.akamaihd.net/assets/m/1102021805/univ/art/1102021805_univ_lsr_lg.jpg" alt="Мужчина начинает свой путь по извилистой дороге, вдоль которой растут красивые цветы трава и деревья. Вдалеке виднеются холмы и горы." />
+              </picture>
+            </a>
+            <div class="block-text">
+              <div class="home__title-block">
+                <h1 class="home__title title size-title dark-color">Вводный библейский курс</h1>
+              </div>
+
+              <ul class="home__list">
+                <li class="home__item subtitle size-subtitle blue-color">
+                  <a href="./question.html">Возможно ли жить вечно?</a>
+                </li>
+
+                <li class="home__item subtitle size-subtitle blue-color">
+                  <a href="./info.html">Как пользоваться этим сайтом</a>
+                </li>
+              </ul>
+
+              <div class="home__header-block">
+                <h2 class="home__header subtitle dark-color">Темы</h2>
+                <div class="home__line"></div>
+              </div>
+
+              <ul class="home__list">
+                <li class="home__item subtitle size-subtitle blue-color">
+                  <a href="./topic-1.html">Тема 1. Как вам может помочь Библия?</a>
+                </li>
+
+                <li class="home__item subtitle size-subtitle blue-color">
+                  <a href="./topic-2.html">Тема 2. Библия даёт надежду</a>
+                </li>
+
+                <li class="home__item subtitle size-subtitle blue-color">
+                  <a href="./topic-3.html">Тема 3. Можно ли верить Библии?</a>
+                </li>
+
+                <li class="home__item subtitle size-subtitle blue-color">
+                  <a href="./finish.html">Вам понравилось то, что вы узнали?</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </main>
+      <div class="overlay">
+        <div class="modal modal-font">
+          <div class="modal-font__block-text">
+            <span class="dark-color text">Aa</span>
+            <span class="dark-color text">Aa</span>
+          </div>
+
+          <div class="modal-font__input">
+            <label for="font-size">Увеличить или уменьшить размер шрифта</label>
+            <input type="range" id="font-size" min="14" max="30" value="20" />
+          </div>
+        </div>
+
+        <div class="modal modal-text">
+          <div class="modal-text__header">
+            <div class="modal-text__title white-color subtitle">Приведённый стих</div>
+            <div class="modal-text__close"></div>
+          </div>
+
+          <div class="modal-text__body">
+            <div class="blue-color subtitle" id="modal-text-title"></div>
+            <!-- <p class="text dark-color"><span class="blue-color subtitle"></span></p> -->
+          </div>
+        </div>
+      </div>`;
+    </script>
+    <script src="./files/js/glightbox.min.js?_v=20231127175553"></script>
+    <script src="js/app.min.js?_v=20231127175553"></script>
+  </body>
+</html>

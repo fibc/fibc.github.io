@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Language" content="ru" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Библейский курс. Вам понравилось то, что вы узнали?</title>
+    <link rel="stylesheet" href="css/style-topic.min.css?_v=20231127175553" />
+  </head>
+  <script src="./files/apps/code.js?_v=20231127175553"></script>
+  <body>
+    <noscript>
+      <div class="bg-wrong">
+        <div class="stop wrong">Упс, похоже вы запретили использовать JavaScript :(</div>
+      </div>
+    </noscript>
+
+    <script>
+      document.body.innerHTML = `
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="./topic-3.html" class="button btn-navigation btn-active">Назад<span>&#9668;</span></a>
+            <div class="header__btns">
+              <a href="/" class="button btn-header">
+                <svg width="25" height="25" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.9375 9.21481V2.53125H17.7188V5.61357L13.5 1.6875L0 14.3438H3.375V25.3125H10.9688V16.875H16.0312V25.3125H23.625V14.3438H27L21.9375 9.21481Z" fill="white" />
+                </svg>
+              </a>
+
+              <a id="modal-font" class="button btn-header">Аа</a>
+            </div>
+
+            <button class="button btn-navigation" disabled>Далее<span>&#9658;</span></button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <article class="topic">
+          <div class="container bg-white">
+            <div class="block-text">
+              <div class="topic__start">
+                <h1 class="topic__title title title-header size-title dark-color">Вам понравилось то, что вы узнали?</h1>
+                <p class="topic__text text dark-color mb-15">Хотели бы вы узнать больше о том, что говорится в Библии?</p>
+                <p class="topic__text text dark-color mb-15">Эти темы — лишь пример того, что вас ожидает на библейском курсе.</p>
+                <p class="topic__text text dark-color mb-15">Курс совершенно бесплатный и ни к чему вас не обязывает. Время и место обучения вы можете выбрать сами.</p>
+                <p class="topic__text text dark-color">Во время библейского курса вы узнаете:</p>
+                <ul class="topic__list mb-30">
+                  <li class="topic__text subtitle dark-color">в чём смысл жизни;</li>
+                  <li class="topic__text subtitle dark-color">как обрести настоящее внутреннее спокойствие;</li>
+                  <li class="topic__text subtitle dark-color">в чём секрет счастливой семьи;</li>
+                  <li class="topic__text subtitle dark-color">что Библия говорит о будущем.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <div class="overlay">
+        <div class="modal modal-font">
+          <div class="modal-font__block-text">
+            <span class="dark-color text">Aa</span>
+            <span class="dark-color text">Aa</span>
+          </div>
+
+          <div class="modal-font__input">
+            <label for="font-size">Увеличить или уменьшить размер шрифта</label>
+            <input type="range" id="font-size" min="14" max="30" value="20" />
+          </div>
+        </div>
+
+        <div class="modal modal-text">
+          <div class="modal-text__header">
+            <div class="modal-text__title white-color subtitle">Приведённый стих</div>
+            <div class="modal-text__close"></div>
+          </div>
+
+          <div class="modal-text__body">
+            <div class="blue-color subtitle" id="modal-text-title"></div>
+            <!-- <p class="text dark-color"><span class="blue-color subtitle"></span></p> -->
+          </div>
+        </div>
+      </div>`;
+    </script>
+    <script src="js/app.min.js?_v=20231127175553"></script>
+  </body>
+</html>
