@@ -54,9 +54,9 @@ async function generateSalt() {
     return Array.from(saltBuffer, (byte) => byte.toString(16).padStart(2, "0")).join("");
 }
 
-async function checkPassword() {
+async function checkPassword(urlCode = null) {
     const input = document.getElementById("code");
-    const enteredPassword = input.value.replaceAll(" ", "");
+    const enteredPassword = urlCode ?? input.value.replaceAll(" ", "");
 
     if (enteredPassword === "") {
         return;
@@ -171,4 +171,13 @@ const verificationCode = () => {
 };
 
 verificationCode();
+
+async function verificationUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+
+    if (code) { await checkPassword(code); }
+};
+
+verificationUrl();
 
